@@ -55,12 +55,19 @@ def ros_repositories():
         urls = ["https://github.com/bazelbuild/rules_foreign_cc/archive/83e6cf48cf00214bb4348691beecef8f3bc42f7d.zip"],
     )
 
+    #maybe(
+    #    http_archive,
+    #    name = "com_github_nelhage_rules_boost",
+    #    strip_prefix = "rules_boost-98495a618246683c9058dd87c2c78a2c06087999",
+    #    sha256 = "fc2b63b293d0d5eebe7a6b3328bec8a13f4b0bc2b532f4e117b51c7f4e5d421b",
+    #    urls = ["https://github.com/nelhage/rules_boost/archive/98495a618246683c9058dd87c2c78a2c06087999.zip"],
+    #)
     maybe(
-        http_archive,
-        name = "com_github_nelhage_rules_boost",
-        strip_prefix = "rules_boost-98495a618246683c9058dd87c2c78a2c06087999",
-        sha256 = "fc2b63b293d0d5eebe7a6b3328bec8a13f4b0bc2b532f4e117b51c7f4e5d421b",
-        urls = ["https://github.com/nelhage/rules_boost/archive/98495a618246683c9058dd87c2c78a2c06087999.zip"],
+      http_archive,
+      name = "com_github_nelhage_rules_boost",
+      strip_prefix = "rules_boost-8c4d95fec735c0d971257051bc20d9ac46773a5c",
+      sha256 = "1c7bd3924b72eacf4c06b507b823ba6b0a67b0685ec3212db3c7f848fed22854",
+      url = "https://github.com/nelhage/rules_boost/archive/8c4d95fec735c0d971257051bc20d9ac46773a5c.tar.gz",
     )
 
     maybe(
